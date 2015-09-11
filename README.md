@@ -6,3 +6,6 @@ sudo sed -i 's/gedit.desktop/sublime-text-3.desktop/g' /usr/share/applications/d
 
 ### Remove Wine's Notepad from “Open With” options ###
 sudo sed -i 's/wine-extension-txt.desktop/sublime-text-3.desktop/g' ~/.local/share/applications/mimeinfo.cache
+
+### Screen brightness
+dbus-send --session --print-reply --dest="org.gnome.SettingsDaemon" /org/gnome/SettingsDaemon/Power org.gnome.SettingsDaemon.Power.Screen.SetPercentage uint32:**50**

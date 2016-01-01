@@ -44,3 +44,8 @@ lucas@lucas-ThinkPad:~$ xinput
 ```
 xinput float [AT Translated Set 2 keyboard id]
 ```
+
+### Show program listening port ###
+```
+netstat -ntlp
+```
